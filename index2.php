@@ -3,7 +3,7 @@
 if (isset($_POST['texto']))
 {
    $texto = $_POST['texto'];
-   $a = fopen('m.txt', 'w');
+   $a = fopen('m.txt', 'a+');
    fwrite($a, $texto);
    fclose($a);}?>
 
